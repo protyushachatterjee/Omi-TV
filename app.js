@@ -67,6 +67,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', indexRouter);
 
 
-server.listen(port, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log(`Server is running on ${port}`);
 });
